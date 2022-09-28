@@ -1,0 +1,567 @@
+/* Основные блоки */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome{
+    background-image: url('heart.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 5% 28%;
+}
+
+.sent {
+    background-image: url('sent.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 5% 28%;
+}
+
+.choose {
+    background-image: url('courses.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 45% 28%;
+}
+
+.final {
+    background-image: url('star.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 50% 35%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 700px;
+    justify-content: space-between;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 700px;
+    justify-content: flex-start;
+}
+
+/* Элементы левой части */
+.item1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.bar_number {
+    flex-basis: 0;
+    padding: 0 30px;
+    color: #444;
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+
+.gap {
+    flex: 1;
+    background-image: url('line_grey.svg');
+    background-size: 8px;
+    background-position: 0% 50%;
+    background-repeat: repeat-x;
+}
+
+.ready_bg {
+    flex: 1;
+    background-image: url('line.svg');
+    background-size: 8px;
+    background-position: 0% 50%;
+    background-repeat: repeat-x;
+}
+
+.ready {
+    color: white;
+}
+
+/* Текстовые элементы левой части */
+.welcome_text h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.welcome_text p {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+/* Элементы правой  части */
+.row_elements {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 50px 0;
+  
+}
+
+.row_elements_checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+
+.row_elements_checkbox > label {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 100px;
+}
+
+.row_elements_date {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Текстовые элементы правой части */
+.right_side_heading {
+    display: flex;
+    width: 100%;
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.right_side_label {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.right_side_comment {font-size: 1rem;
+}
+
+.right_side_final {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1,2;
+}
+
+/* Поля ввода*/
+input[type="text"],
+select {
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #777;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+input[type="date"] {
+    height: 70px;
+    width: 45%;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #777;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+/* Радио*/
+.form_1 input[type="radio"],
+.form_1 label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 256px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    border: 1px solid black;
+}
+
+.form_1 input[type="radio"] {
+    display: none;
+}
+
+.form_1 label:hover {
+    background: black;
+    color: white;
+}
+
+.form_1 input[type="radio"]:checked+label {
+    background: black;
+    color: white;
+}
+
+.student {
+    border-radius: 30px 0 0 30px;
+}
+
+.teacher {
+    border-radius: 0 30px 30px 0;
+}
+
+/* Чекбокс*/
+.form_2 input[type="checkbox"],
+.form_2 label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    padding: 10px 30px;
+    border: 1px solid black;
+}
+
+.form_2 input[type="checkbox"] {
+    display: none;
+}
+
+.course {
+    border-radius: 30px;
+    padding: 100px;
+}
+
+.form_2 label:hover {
+    background: black;
+    color: white;
+}
+
+.form_2 input[type="radio"]:checked+label {
+    background: black;
+    color: white;
+}
+
+
+/* Чекбокс*/
+input[type=range] {
+    height: 25px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: black;
+    border-radius: 1px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid black;
+    height: 26px;
+    width: 26px;
+    border-radius: 25px;
+    background: black;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background:black;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: black;
+    border-radius: 1px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid black;
+    height: 26px;
+    width: 26px;
+    border-radius: 25px;
+    background: black;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background:black;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: black;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid black;
+    height: 26px;
+    width: 26px;
+    border-radius: 25px;
+    background: black;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: black;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: black;
+  }
+  
+
+/* Кнопка */
+
+a {
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 80px;
+    width: 200px;
+    border-radius: 40px;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: end;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.button {
+    display: flex;
+    justify-content: end;
+}
+
+
+/* адаптивность */
+
+@media (max-width: 1400px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: white;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .right_side_heading {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    .row_elements {
+        margin: 10px 0 10px 0;
+    }
+
+
+
+    input[type="text"],
+    select {
+        height: 30px;
+        width: 90%;
+    }
+
+    .form_1 label {
+        font-size: 1.2rem;
+        padding: 8px 0;
+        border: 1px solid black;
+    }
+
+    .container {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .item1 {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .container {
+        height: 70vh;
+
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        height: 25vh;
+        background-image: none;
+        justify-content: space-between;
+    }
+
+    .right {
+        display: flex;
+    }
+
+    .item1,
+    .button {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right_side_heading {
+        font-size: 2rem;
+    }
+
+    .bar_number {
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .welcome_text h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 1;
+    }
+
+    .welcome_text p {
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+
+    .form_1 input[type="radio"],
+    .form_1 label {
+        width: 150px;
+        font-size: 1.1rem;
+    }
+
+    .right_side_label {
+        font-size: 1.2rem;
+    }
+
+    .student {
+        border-radius: 30px 0 0 30px;
+    }
+
+    .teacher {
+        border-radius: 0 30px 30px 0;
+    }
+
+    .form_1 input[type="radio"] {
+        display: none;
+    }
+
+    .welcome_text {
+        text-align: center;
+    }
+
+    input[type="text"],
+    select {
+        height: 40px;
+        color: #777;
+        font-size: 1.2rem;
+        background-color: white;
+    }
+
+    a {
+        display: flex;
+        color: white;
+        background-color: black;
+        height: 50px;
+        width: 200px;
+        border-radius: 30px;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .form_1,
+    .form_2 {
+        height: 90%;
+    }
+}

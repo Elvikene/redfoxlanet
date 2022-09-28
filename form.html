@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left welcome">
+            <div class="container">
+                <div class="item1">
+                    <div class="bar_number ready"><span class="">1 </span></div>
+                    <div class="gap ready_bg"></div>
+                    <div class="bar_number"><span class="">2</span></div>
+                    <div class="gap"></div>
+                    <div class="bar_number"><span class="">3</span></div>
+                    <div class="gap"></div>
+                    <div class="bar_number"><span class="">4 </span></div>
+                </div>
+                <div class="item2">
+                    <div class="welcome_text">
+                        <h1>Добро пожаловать</h1>
+                        <p>на наш портал поиска курсов для студентов и преподавателей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <form class="form_1" action="">
+                <div class="container">
+                    <div class="right_side_heading">Хочу участвовать</div>
+                    <div class="row_elements">
+                        <input type="radio" id="student" name="role" checked="checked" />
+                        <label for="student" class="student">Студент</label>
+                        <input type="radio" id="teacher" name="role" />
+                        <label for="teacher" class="teacher">Учитель</label>
+                    </div>
+                    <div class="right_side_label">Где вы находитесь?</div>
+                    <select name="country">
+                        <option value="">Страна</option>
+                        <option value="Эстония">Эстония</option>
+                        <option value="Латвия">Латвия</option>
+                        <option value="Литва">Литва</option>
+                        <option value="Финляндия">Финляндия</option>
+                    </select>
+                    <select name="country">
+                        <option value=" ">Город</option>
+                        <option value="Таллинн">Таллинн</option>
+                        <option value="Рига">Рига</option>
+                        <option value="Вильнюс">Вильнюс</option>
+                        <option value="Хельсинки">Хельсинки</option>
+                    </select>
+                    <div class="right_side_comment">Не нашли свой город в списке? </div>
+                    <div class="row_elements"><input type="text" placeholder="Добавить город"></div>
+                    <div class="button"><a href="form_2.html">Далее</a></div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

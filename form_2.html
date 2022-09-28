@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left choose">
+            <div class="container">
+                <div class="item1">
+                    <div class="bar_number"><span class="progress_bar_element ready">1 </span></div>
+                    <div class="gap ready_bg"><span class="progress_bar_element"></span></div>
+                    <div class="bar_number"><span class="progress_bar_element ready">2</span></div>
+                    <div class="gap ready_bg"><span class="progress_bar_element"> </span></div>
+                    <div class="bar_number"><span class="progress_bar_element">3</span></div>
+                    <div class="gap"><span class="progress_bar_element"> </span></div>
+                    <div class="bar_number"><span class="progress_bar_element">4</span></div>
+                </div>
+
+                <div class="item2">
+                    <div class="welcome_text ">
+                        <p>Выберите интересующую вас сферу и подходящий курс</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <form class="form_2" action="">
+                <div class="container">
+                    <div class="row_elements_checkbox">
+                        <input type="checkbox" id="ui" />
+                        <label for="ui" class="course">UI/UX</label>
+                        <input type="checkbox" id="css" />
+                        <label for="css" class="course">CSS</label>
+                        <input type="checkbox" id="html" />
+                        <label for="html" class="course">HTML</label>
+                        <input type="checkbox" id="pyhton" />
+                        <label for="pyhton" class="course">Pyhton</label>
+                        <input type="checkbox" id="phyton" />
+                        <label for="phyton" class="course">JavaScript</label>
+                    </div>
+                    <div class="right_side_label">Длительность курса</div>
+                    <input type="range">
+                    <div class="right_side_label">Выберите период времени</div>
+                    <div class="row_elements_date">
+                        <input type="date">
+                        <input type="date">
+                    </div>
+                    <div class="right_side_label">Выберите курс</div>
+                    <select name="course">
+                        <option value=" ">Выберите курс</option>
+                        <option value="Основы вёрстки">Основы вёрстки</option>
+                        <option value="Основы вёрстки">Основы вёрстки</option>
+                        <option value="Основы вёрстки">Основы вёрстки</option>
+                        <option value="Основы вёрстки">Основы вёрстки</option>
+                    </select>
+                    <div class="button"><a href="form_3.html">Далее</a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
