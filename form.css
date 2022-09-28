@@ -1,4 +1,3 @@
-/* Основные блоки */
 *{
     padding: 0;
     margin: 0;
@@ -24,6 +23,8 @@ html, body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    font-family: 'Inter', sans-serif;
+
 }
 
 input, button, textarea {
@@ -41,6 +42,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+input:not([type=checkbox]):not([type=radio]),
+    textarea, 
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 0%;
+    }
+
+
+/* Основные блоки */
+
 .wrapper {
     display: grid;
     height: 100vh;
@@ -57,28 +70,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .welcome{
-    background-image: url('heart.png');
+    background-image: url('../images/heart.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 5% 28%;
 }
 
 .sent {
-    background-image: url('sent.png');
+    background-image: url('../images/sent.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 5% 28%;
 }
 
 .choose {
-    background-image: url('courses.png');
+    background-image: url('../images/courses.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: 45% 28%;
 }
 
 .final {
-    background-image: url('star.png');
+    background-image: url('../images/star.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: 50% 35%;
@@ -134,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .gap {
     flex: 1;
-    background-image: url('line_grey.svg');
+    background-image: url('../images/line_grey.svg');
     background-size: 8px;
     background-position: 0% 50%;
     background-repeat: repeat-x;
@@ -142,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ready_bg {
     flex: 1;
-    background-image: url('line.svg');
+    background-image: url('../images/line.svg');
     background-size: 8px;
     background-position: 0% 50%;
     background-repeat: repeat-x;
@@ -481,6 +494,8 @@ a:hover {
 
 @media (max-width: 700px) {
 
+
+
     .container {
         width: 90%;
     }
@@ -593,3 +608,4 @@ a:hover {
         height: 90%;
     }
 }
+
