@@ -70,28 +70,28 @@ input:not([type=checkbox]):not([type=radio]),
 }
 
 .welcome{
-    background-image: url('../images/heart.png');
+    background-image: url('heart.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 5% 28%;
 }
 
 .sent {
-    background-image: url('../images/sent.png');
+    background-image: url('sent.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 5% 28%;
 }
 
 .choose {
-    background-image: url('../images/courses.png');
+    background-image: url('courses.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: 45% 28%;
 }
 
 .final {
-    background-image: url('../images/star.png');
+    background-image: url('star.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: 50% 35%;
@@ -147,7 +147,7 @@ input:not([type=checkbox]):not([type=radio]),
 
 .gap {
     flex: 1;
-    background-image: url('../images/line_grey.svg');
+    background-image: url('line_grey.svg');
     background-size: 8px;
     background-position: 0% 50%;
     background-repeat: repeat-x;
@@ -155,7 +155,7 @@ input:not([type=checkbox]):not([type=radio]),
 
 .ready_bg {
     flex: 1;
-    background-image: url('../images/line.svg');
+    background-image: url('line.svg');
     background-size: 8px;
     background-position: 0% 50%;
     background-repeat: repeat-x;
